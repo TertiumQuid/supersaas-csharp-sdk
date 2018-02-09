@@ -1,7 +1,9 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="SuperSaaS.CSharp.SDK/Class1.cs">
+﻿<Properties StartupConfiguration="{BB20D879-6063-46D9-9AB1-3A9C142D3A91}|Unit Tests">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SuperSaaS.CSharp.SDK/Api/BaseApi.cs">
     <Files>
-      <File FileName="SuperSaaS.CSharp.SDK/Class1.cs" Line="9" Column="1" />
+      <File FileName="SuperSaaS.CSharp.SDK/Client.cs" Line="44" Column="10" />
+      <File FileName="SuperSaaS.CSharp.SDK/Configuration.cs" Line="18" Column="37" />
+      <File FileName="SuperSaaS.CSharp.SDK/Api/BaseApi.cs" Line="9" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -9,5 +11,7 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <AuthorInfo Name="Travis Dunn" Email="travis@supersaas.com" Copyright="SuperSaaS" Company="SuperSaaS" Trademark="" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.SuperSaaS.CSharp.SDK PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
