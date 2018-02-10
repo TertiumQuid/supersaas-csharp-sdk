@@ -1,10 +1,20 @@
-﻿<Properties StartupConfiguration="{BB20D879-6063-46D9-9AB1-3A9C142D3A91}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SuperSaaS.CSharp.SDK/Api/BaseApi.cs">
+﻿<Properties StartupConfiguration="{1B10C8FC-D04B-4DD2-91C1-2653F90283F0}|Unit Tests">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SuperSaaS.CSharp.Tests/UsersTest.cs">
     <Files>
-      <File FileName="SuperSaaS.CSharp.SDK/Client.cs" Line="44" Column="10" />
-      <File FileName="SuperSaaS.CSharp.SDK/Configuration.cs" Line="18" Column="37" />
-      <File FileName="SuperSaaS.CSharp.SDK/Api/BaseApi.cs" Line="9" Column="10" />
+      <File FileName="SuperSaaS.CSharp.SDK/IClient.cs" Line="22" Column="1" />
+      <File FileName="SuperSaaS.CSharp.Tests/AppointmentsTest.cs" Line="1" Column="1" />
+      <File FileName="SuperSaaS.CSharp.Tests/FormsTest.cs" Line="1" Column="1" />
+      <File FileName="SuperSaaS.CSharp.Tests/UsersTest.cs" Line="1" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="SuperSaaS.CSharp.SDK" expanded="True">
+            <Node name="SuperSaaS.CSharp.Tests" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -13,5 +23,6 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <AuthorInfo Name="Travis Dunn" Email="travis@supersaas.com" Copyright="SuperSaaS" Company="SuperSaaS" Trademark="" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.SuperSaaS.CSharp.Tests PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.SuperSaaS.CSharp.SDK PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

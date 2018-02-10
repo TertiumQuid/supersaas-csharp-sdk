@@ -5,19 +5,19 @@ namespace SuperSaaS.CSharp.SDK
     {
         public const string DEFAULT_HOST = "http://localhost:3000";
 
-        public string accountName;
-        public string password;
-        public string userName;
-        public string host;
-        public bool test;
+        public string AccountName;
+        public string Password;
+        public string UserName;
+        public string Host;
+        public bool Test;
 
         public Configuration()
         {
-            this.accountName = Environment.GetEnvironmentVariable("SSS_SDK_ACCOUNT_NAME");
-            this.password = Environment.GetEnvironmentVariable("SSS_SDK_PASSWORD");
-            this.userName = Environment.GetEnvironmentVariable("SSS_SDK_USER_NAME");
-            this.test = false;
-            this.host = Configuration.DEFAULT_HOST;
+            this.AccountName = Environment.GetEnvironmentVariable("SSS_SDK_ACCOUNT_NAME");
+            this.Password = Environment.GetEnvironmentVariable("SSS_SDK_PASSWORD");
+            this.UserName = Environment.GetEnvironmentVariable("SSS_SDK_USER_NAME");
+            this.Test = false;
+            this.Host = Configuration.DEFAULT_HOST;
         }
     }
 }

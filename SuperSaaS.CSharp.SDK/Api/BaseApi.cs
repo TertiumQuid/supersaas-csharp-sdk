@@ -1,13 +1,14 @@
 ﻿using System;
+
 namespace SuperSaaS.CSharp.SDK.Api
 {
     public class BaseApi
     {
-        private IClient client;
+        protected IClient Client;
 
         public BaseApi(IClient client)
         {
-            this.client = client;
+            this.Client = client;
         }
     }
 }
