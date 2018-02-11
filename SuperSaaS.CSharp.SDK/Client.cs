@@ -24,6 +24,8 @@ namespace SuperSaaS.CSharp.SDK
         public Forms Forms { get; set; }
         public Users Users { get; set; }
 
+        HttpWebRequest LastRequest;
+
         public Client(Configuration configuration = null)
         {
             configuration = configuration ?? new Configuration();
@@ -84,6 +86,7 @@ namespace SuperSaaS.CSharp.SDK
                 json = JsonConvert.SerializeObject(postData);
             }
 
+            this.LastRequest = request;
             if (this.Test) {
                 return default(T);
             }
