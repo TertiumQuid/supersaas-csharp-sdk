@@ -97,14 +97,57 @@ namespace SuperSaaS.CSharp.SDK.Api
             return this.Client.Get<Appointment>(path, data);
         }
 
-        public Appointment Create(int scheduleId, int userId)
+        public Appointment Create(int scheduleId, int userId, Dictionary<string, string> attributes, bool form = false, bool webhook = false)
         {
-            return new Appointment();
+            string path = "/bookings";
+            JsonArgs appointmentData = new JsonArgs { };
+            foreach (KeyValuePair<string, string> entry in attributes)
+            {
+                appointmentData.Add(entry.Key, entry.Value);
+            }
+            NestedJsonArgs data = new NestedJsonArgs
+            {
+                { "appointment", appointmentData }
+            };
+            JsonArgs query = new JsonArgs { 
+                { "schedule_id", scheduleId.ToString() },
+                { "user_id", userId.ToString() }
+            };
+            if (webhook)
+            {
+                query.Add("webhook", "true");
+            }
+            if (form)
+            {
+                query.Add("form", "true");
+            }
+            return this.Client.Post<Appointment>(path, data, query);
         }
 
-        public Appointment Update(int scheduleId, int appointmentId)
+        public Appointment Update(int scheduleId, int appointmentId, Dictionary<string, string> attributes, bool form = false, bool webhook = false)
         {
-            return new Appointment();
+            string path = "/bookings/" + appointmentId.ToString();
+            JsonArgs appointmentData = new JsonArgs { };
+            foreach (KeyValuePair<string, string> entry in attributes)
+            {
+                appointmentData.Add(entry.Key, entry.Value);
+            }
+            NestedJsonArgs data = new NestedJsonArgs
+            {
+                { "appointment", appointmentData }
+            };
+            JsonArgs query = new JsonArgs {
+                { "schedule_id", scheduleId.ToString() }
+            };
+            if (webhook)
+            {
+                query.Add("webhook", "true");
+            }
+            if (form)
+            {
+                query.Add("form", "true");
+            }
+            return this.Client.Put<Appointment>(path, data, query);
         }
 
         public void Delete(int appointmentId)

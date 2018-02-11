@@ -24,14 +24,28 @@ namespace SuperSaaS.CSharp.SDK
         public Forms Forms { get; set; }
         public Users Users { get; set; }
 
-        public Client(Configuration configuration)
+        public Client(Configuration configuration = null)
         {
+            configuration = configuration ?? new Configuration();
             this.AccountName = configuration.AccountName;
             this.Password = configuration.Password;
             this.UserName = configuration.UserName;
             this.Host = configuration.Host;
             this.Test = configuration.Test;
+            this.Init();
+        }
 
+        public Client(string accountName, string password, string userName = null, string host = null, bool test = false) 
+        {
+            this.AccountName = accountName;
+            this.Password = password;
+            this.UserName = userName;
+            this.Host = host ?? Configuration.DEFAULT_HOST;
+            this.Test = test;
+            this.Init();
+        }
+
+        private void Init() {
             this.Appointments = new Appointments(this);
             this.Forms = new Forms(this);
             this.Users = new Users(this);
@@ -65,22 +79,23 @@ namespace SuperSaaS.CSharp.SDK
             request.UserAgent = this.userAgent();
             request.Timeout = TIMEOUT_SECONDS;
 
+            string json = null;
             if (postData != null) {
-                string json = JsonConvert.SerializeObject(postData);
-
-                using (Stream stream = request.GetRequestStream())
-                {
-                    using (StreamWriter streamOut = new StreamWriter(stream, System.Text.Encoding.UTF8))
-                    {
-                        streamOut.Write(postData);
-                        streamOut.Close();
-                    }
-                    stream.Close();
-                }
+                json = JsonConvert.SerializeObject(postData);
             }
 
             if (this.Test) {
                 return default(T);
+            }
+
+            if (json != null) {
+                using (Stream stream = request.GetRequestStream())
+                {
+                    using (StreamWriter streamOut = new StreamWriter(stream, System.Text.Encoding.ASCII))
+                    {
+                        streamOut.Write(json);
+                    }
+                }
             }
 
             string body = "";

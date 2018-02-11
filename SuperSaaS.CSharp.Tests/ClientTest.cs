@@ -1,5 +1,4 @@
 ﻿using NUnit.Framework;
-using System.Collections.Generic;
 using SuperSaaS.CSharp.SDK;
 using SuperSaaS.CSharp.SDK.Api;
 

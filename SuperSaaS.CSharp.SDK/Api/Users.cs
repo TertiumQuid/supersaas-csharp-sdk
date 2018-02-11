@@ -30,10 +30,15 @@ namespace SuperSaaS.CSharp.SDK.Api
             return this.Client.Get<User[]>(path, data);
         }
 
-        public User Get(int userId)
+        public User Get(string userId)
         {
             string path = "/users/" + userId;
             return this.Client.Get<User>(path);
+        }
+
+        public User Get(int userId)
+        {
+            return this.Get(userId.ToString());
         }
 
         public User Create(Dictionary<string, string> attributes, string userId = null, bool webhook = false)
@@ -48,7 +53,7 @@ namespace SuperSaaS.CSharp.SDK.Api
             }
             NestedJsonArgs data = new NestedJsonArgs
             {
-                { "userid", userData }
+                { "user", userData }
             };
             JsonArgs query = null;
             if (webhook) {
@@ -71,7 +76,7 @@ namespace SuperSaaS.CSharp.SDK.Api
             }
             NestedJsonArgs data = new NestedJsonArgs
             {
-                { "userid", userData }
+                { "user", userData }
             };
             if (webhook)
             {

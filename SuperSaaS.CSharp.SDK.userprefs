@@ -1,16 +1,26 @@
 ﻿<Properties StartupConfiguration="{1B10C8FC-D04B-4DD2-91C1-2653F90283F0}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SuperSaaS.CSharp.Tests/UsersTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SuperSaaS.CSharp.SDK/Client.cs">
     <Files>
-      <File FileName="SuperSaaS.CSharp.SDK/IClient.cs" Line="22" Column="1" />
-      <File FileName="SuperSaaS.CSharp.Tests/AppointmentsTest.cs" Line="1" Column="1" />
-      <File FileName="SuperSaaS.CSharp.Tests/FormsTest.cs" Line="1" Column="1" />
-      <File FileName="SuperSaaS.CSharp.Tests/UsersTest.cs" Line="1" Column="1" />
+      <File FileName="SuperSaaS.CSharp.Tests/AppointmentsTest.cs" Line="40" Column="10" />
+      <File FileName="SuperSaaS.CSharp.Tests/UsersTest.cs" Line="63" Column="10" />
+      <File FileName="SuperSaaS.CSharp.SDK/Api/Users.cs" Line="64" Column="14" />
+      <File FileName="SuperSaaS.CSharp.SDK/Api/Appointments.cs" Line="119" Column="14" />
+      <File FileName="README.md" Line="27" Column="5" />
+      <File FileName="SuperSaaS.CSharp.SDK/Client.cs" Line="29" Column="13" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
           <Node name="SuperSaaS.CSharp.SDK" expanded="True">
-            <Node name="SuperSaaS.CSharp.Tests" selected="True" />
+            <Node name="SuperSaaS.CSharp.Tests" expanded="True">
+              <Node name="SuperSaaS" expanded="True">
+                <Node name="CSharp" expanded="True">
+                  <Node name="Tests" expanded="True">
+                    <Node name="UsersTest" expanded="True" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
