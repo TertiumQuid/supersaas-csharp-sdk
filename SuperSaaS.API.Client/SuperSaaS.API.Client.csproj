@@ -10,15 +10,17 @@
     <AssemblyName>SuperSaaS.CSharp.SDK</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <PackOnBuild>true</PackOnBuild>
-    <PackageId>SuperSaaS.CSharp.SDK</PackageId>
+    <PackageId>SuperSaaS.API.Client</PackageId>
     <PackageVersion>0.1.0</PackageVersion>
     <Authors>Travis Dunn</Authors>
     <Owners>SuperSaaS</Owners>
-    <PackageProjectUrl>https://github.com/TertiumQuid/supersaas-csharp-sdk</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/SuperSaaS/supersaas-csharp-api</PackageProjectUrl>
     <Summary>Online bookings/appointments/calendars using the SuperSaaS scheduling platform.</Summary>
     <PackageTags>online appointment schedule, booking calendar, appointment book, reservation system, scheduling software, online booking system, scheduling system</PackageTags>
     <Title>SuperSaaS </Title>
     <Description>Online appointment scheduler for any type of business. Flexible and affordable booking software that can be integrated into any site. Free basic version.</Description>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageIconUrl>https://static.supersaas.net/favicon.ico</PackageIconUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

@@ -1,8 +1,7 @@
 ﻿using NUnit.Framework;
-using SuperSaaS.CSharp.SDK;
-using SuperSaaS.CSharp.SDK.Api;
+using SuperSaaS.API.Api;
 
-namespace SuperSaaS.CSharp.Tests
+namespace SuperSaaS.API.Tests
 {
     [TestFixture()]
     public class ClientTest

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using SuperSaaS.CSharp.SDK.Models;
+using SuperSaaS.API.Models;
 
-namespace SuperSaaS.CSharp.SDK.Api
+namespace SuperSaaS.API.Api
 {
     public class Appointments : BaseApi
     {

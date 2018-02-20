@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SuperSaaS.CSharp.SDK
+namespace SuperSaaS.API
 {
     public static class HttpMethod
     {

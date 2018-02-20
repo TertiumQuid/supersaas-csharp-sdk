@@ -1,8 +1,7 @@
 ﻿using NUnit.Framework;
 using System.Collections.Generic;
-using SuperSaaS.CSharp.SDK;
 
-namespace SuperSaaS.CSharp.Tests
+namespace SuperSaaS.API.Tests
 {
     [TestFixture()]
     public class UsersTest

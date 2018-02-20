@@ -1,5 +1,5 @@
 ﻿using System;
-namespace SuperSaaS.CSharp.SDK
+namespace SuperSaaS.API
 {
     public class Configuration
     {

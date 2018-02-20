@@ -1,5 +1,5 @@
 ﻿using System;
-namespace SuperSaaS.CSharp.SDK.Models
+namespace SuperSaaS.API.Models
 {
     public class Slot : BaseModel
     {

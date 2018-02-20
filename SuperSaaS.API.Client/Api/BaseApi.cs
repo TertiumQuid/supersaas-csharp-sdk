@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SuperSaaS.CSharp.SDK.Api
+namespace SuperSaaS.API.Api
 {
     public class BaseApi
     {

@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using NUnit.Framework;
-using SuperSaaS.CSharp.SDK;
 
-namespace SuperSaaS.CSharp.Tests
+namespace SuperSaaS.API.Tests
 {
     [TestFixture()]
     public class AppointmentsTest

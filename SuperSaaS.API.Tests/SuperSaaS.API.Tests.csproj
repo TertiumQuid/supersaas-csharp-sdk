@@ -40,9 +40,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SuperSaaS.CSharp.SDK\SuperSaaS.CSharp.SDK.csproj">
+    <ProjectReference Include="..\SuperSaaS.API.Client\SuperSaaS.API.Client.csproj">
       <Project>{BB20D879-6063-46D9-9AB1-3A9C142D3A91}</Project>
-      <Name>SuperSaaS.CSharp.SDK</Name>
+      <Name>SuperSaaS.API.Client</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

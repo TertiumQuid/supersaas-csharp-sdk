@@ -3,10 +3,10 @@ using System.IO;
 using System.Text;
 using System.Net;
 using System.Collections.Generic;
-using SuperSaaS.CSharp.SDK.Api;
+using SuperSaaS.API.Api;
 using Newtonsoft.Json;
 
-namespace SuperSaaS.CSharp.SDK
+namespace SuperSaaS.API
 {
     public class Client : IClient
     {

@@ -1,8 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
-using SuperSaaS.CSharp.SDK;
 
-namespace SuperSaaS.CSharp.Tests
+namespace SuperSaaS.API.Tests
 {
     [TestFixture()]
     public class FormsTest

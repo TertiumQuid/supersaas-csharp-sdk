@@ -1,4 +1,4 @@
-# SuperSaaS C# SDK
+# SuperSaaS C# API Client
 
 Online bookings/appointments/calendars in C# using the SuperSaaS scheduling platform - https://supersaas.com
 
@@ -12,11 +12,9 @@ website or CRM software.
 
 ##### Dependencies
 
-.NET Framework 3.5 or greater.
+.NET Framework 3.5 or greater, with NuGet.
 
-NuGet, in order to install.. 
-
-The Json.NET package.
+Json.NET.
 
 ## Installation
 
@@ -130,7 +128,7 @@ Delete a single appointment by `appointment_id`:
 
 Get a single appointment by `schedule_id` and `appointment_id`:
 
-    client.Appointments.Get(12345, 67890) //=> SuperSaaS.CSharp.Models.Appointment
+    client.Appointments.Get(12345, 67890); //=> SuperSaaS.CSharp.Models.Appointment
 
 #### List Appointments/Bookings
 
@@ -212,3 +210,7 @@ The headers, body, path, etc. of the last request can be inspected for assertion
 + [Objective-C SDK](https://github.com/TertiumQuid/supersaas-objc-sdk)
 
 Contact: [support@supersaas.com](mailto:support@supersaas.com)
+
+## License
+
+The SuperSaaS C# SDK is available under the MIT license. See the LICENSE file for more info.
